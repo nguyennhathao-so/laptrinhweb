@@ -1,0 +1,731 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* khôi phục lại cỡ chữ mặc định theo rem */
+body {
+  font-size: 1.6rem;
+  font-family: "Sora", sans-serif;
+}
+/* ==============================common=============================== */
+.bacground {
+  width: 144rem;
+  margin: auto;
+  margin-bottom: 170px;
+}
+
+.vanbansmall1 {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 175%; /* 175% */
+}
+
+.vanbansmall2 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 166.667%; /* 166.667% */
+}
+
+a {
+  text-decoration: none;
+  color: #575f66;
+}
+
+.vanbansmall3 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 185.714%; /* 185.714% */
+}
+
+.btn {
+  display: inline-block;
+  min-width: 205px;
+  line-height: 60px;
+  background: #2e80ce;
+  text-align: center;
+  border-radius: 3rem;
+}
+.box1 {
+  width: 117rem;
+
+  margin: auto;
+}
+/* ==========================part1================================= */
+
+/* ==============================box1__menu========================== */
+.part1 .box1 {
+  height: 80rem;
+}
+.part1 .bacground {
+  background-color: #10375c;
+}
+.part1 .box1__menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3.8rem;
+  align-items: center;
+}
+
+.box1__menu .box1__buttonbig {
+  display: flex;
+  gap: 42px;
+}
+.box1__menu .vanbansmall1 {
+  text-align: center;
+  color: #c9d2da;
+  transition: padding 0.2s ease, background-color 0.2s ease, color 0.2s ease; /* tạo hiệu chuyển động mượt mà cho khối*/
+}
+
+.box1__menu .box1__menu--button {
+  display: flex;
+  gap: 4.8rem;
+}
+
+/* ================================box1__menu hiệu ứng giao diện=========================== */
+.box1__menu .box1__menu--button .vanbansmall1:hover {
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+
+  padding: 8px 20px;
+  background-color: #2e80ce;
+  border-radius: 22px;
+}
+
+.box1__menu .box1__button .vanbansmall1:hover {
+  font-weight: 400;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+.box1__menu .box1__button .vanbansmall1:hover::before {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-right: 8px; /* Điều chỉnh khoảng cách giữa dấu chấm và nội dung nút */
+}
+
+/* ===============================box1_tittle================================== */
+.box1 .box1__title {
+  margin-top: 8.4rem;
+  display: flex;
+  align-items: center;
+  gap: 113px;
+}
+
+/* ================================box1_tittle_left================================= */
+.box1__title .box1__tittle--left {
+  width: 51.7rem;
+}
+.box1__title .box1__title--leftnoidung {
+  color: #fff;
+
+  font-size: 70px;
+
+  font-weight: 600;
+  line-height: 114.286%; /* 114.286% */
+  letter-spacing: -1.4px;
+}
+
+.box1__tittle--left .vanbansmall2 {
+  color: #c9d2da;
+}
+
+.box1__tittle--left .box1__title--leftbutton {
+  display: flex;
+  margin-top: 5.3rem;
+  gap: 3.8rem;
+  align-items: center;
+}
+
+.box1__title--leftbutton .btn {
+  color: #fff;
+  font-weight: 400;
+}
+
+.box1__title--leftbutton p.vanbansmall2 {
+  font-weight: 400;
+}
+
+/* ===================================box1_tittle_right=============================== */
+.box1__title--right .box1__title--rightanh1 {
+  z-index: 1;
+}
+.box1__title--right .box1__title--rightanh2 {
+  z-index: 2;
+}
+.box1__title--right {
+  display: flex;
+  align-items: center;
+}
+
+/* ==============================part2============================ */
+/* =============nen============= */
+
+.part2 .bacground {
+  background-color: #fcfcfc;
+}
+
+.part2 .box1 {
+  height: 778px;
+}
+/* ============top================ */
+.part2 .noidung__top {
+  text-align: center;
+  width: 468px;
+  margin: 0 auto;
+}
+
+.part2 .noidung__top .noidung__top1 {
+  color: #10375c;
+  text-align: center;
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+  letter-spacing: -1px;
+}
+
+.part2 .noidung__top .noidung__top2 {
+  color: #575f66;
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: 300;
+  line-height: 167%;
+}
+/* ============bottom============== */
+.part2 .noidung__bottom {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+/* ==========chude=============== */
+.noidung__bottom--chude .debiendoi {
+  display: flex;
+  width: 470px;
+  height: 128px;
+  align-items: center;
+  gap: 19px;
+}
+.noidung__bottom--chude .noidung__bottom--ao {
+  width: 308px;
+}
+.noidung__bottom--chude .noidung__bottom--ao h1 {
+  line-height: -8px;
+  color: #10375c;
+
+  font-size: 18px;
+
+  font-weight: 600;
+}
+.noidung__bottom--chude .noidung__bottom--ao a {
+  color: #575f66;
+
+  font-size: 16px;
+
+  font-weight: 300;
+  line-height: 175%; /* 175% */
+}
+.noidung__bottom--chude .vanbansmall2 {
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.noidung__bottom--chude .btn {
+  margin-top: 5.5rem;
+}
+
+.noidung__bottom--chude .rang {
+  padding: 18px;
+  border-radius: 49%;
+  background-color: #eff6fd;
+  margin-left: 2.2rem;
+  transition: background-color 0.5s ease;
+}
+.rang path {
+  fill: #10375c;
+  transition: fill 0.5s ease;
+}
+/* ===========chen hieu ung============ */
+.noidung__bottom--chude .debiendoi:hover {
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.debiendoi:hover .rang path {
+  fill: #fff;
+}
+.debiendoi:hover .rang {
+  background-color: #2e80ce;
+}
+
+/* ==========================================part 3==================================== */
+/* ================nen================ */
+.part3 .bacground {
+  background: #f6fbff;
+}
+.part3 .box1 {
+  padding: 100px 0;
+}
+.part3 .box1 .box1__box2 {
+  width: 468px;
+}
+.part3 .box1 main {
+  color: #10375c;
+
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+  letter-spacing: -1px;
+}
+/* ================sua du lieu=============== */
+.part3 .box1 .hopchua {
+  padding-top: 86px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.part3 .hopchua__part {
+  padding: 43px;
+  background: #fff;
+  border-radius: 4px;
+  border: 16px solid #eaf6ff;
+  transition: 0.5s;
+}
+
+.part3 .hopchua__part h1 {
+  color: #10375c;
+  margin: 18px 0 28px 0;
+  font-size: 26px;
+
+  font-weight: 600;
+  line-height: 138%;
+}
+.part3 .hopchua__part a {
+  display: inline-block;
+  margin-top: 18px;
+}
+/* ==========hieu ung============= */
+.part3 .hopchua__part:hover a {
+  font-weight: 400;
+  color: #2e80ce;
+}
+.part3 .hopchua__part:hover {
+  border-color: #2e80ce;
+  transform: translateY(-16px);
+}
+
+/* =============================================part 4====================================== */
+.part4 .hopchua {
+  display: flex;
+  align-items: center;
+  gap: 130px;
+}
+
+.part4 .noidung main {
+  color: #10375c;
+
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+  letter-spacing: -1px;
+}
+
+.part4 span.vanbansmall2 {
+  margin-top: 1.8rem;
+}
+.part4 a.vanbansmall2 {
+  margin-top: 38px;
+  color: #fff;
+  text-align: center;
+
+  font-weight: 400;
+}
+
+.part4 .anh {
+  position: relative;
+  width: 49%;
+}
+.part4 .anh img:nth-child(2) {
+  z-index: 2;
+  position: absolute;
+  top: 121px;
+  left: 238px;
+}
+
+/* ============================part5============================= */
+.part5 .noidung {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.part5 .noidung__chinh {
+  color: #10375c;
+  text-align: center;
+
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+  letter-spacing: -1px;
+}
+.part5 .noidung .vanbansmall2 {
+  color: #fff;
+  text-align: center;
+  margin-top: 3.8rem;
+  margin-bottom: 7rem;
+}
+.part5 .cacbacsi {
+  display: flex;
+  gap: 3.4rem;
+}
+.part5 .bacsi .anh {
+  padding-top: 28px;
+  border-radius: 6px;
+  background: #eaf6ff;
+}
+.part5 .bacsi img {
+  width: 262px;
+  height: 300px;
+}
+.part5 .bacsi .ten,
+.gioithieu {
+  text-align: center;
+}
+
+.part5 .bacsi .ten {
+  color: #10375c;
+
+  font-weight: 400;
+}
+.part5 .bacsi img:hover {
+  box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.part5 .team {
+  margin-top: 3.8rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.8rem;
+}
+.part5 .button {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  transition: background 0.2s ease;
+}
+.part5 .container {
+  rotate: 180deg;
+}
+.part5 .button:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
+
+/* ==========================part6============================== */
+.install .install__inner {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 70px;
+  border-radius: 4px;
+  background: #2e80ce;
+  height: 427px;
+}
+.install .picture {
+  position: absolute;
+  bottom: 0;
+  width: 284px;
+  height: 522px;
+  object-fit: cover;
+}
+.install .install__content {
+  min-width: 586px;
+}
+
+.install__content .noidung {
+  color: #fff;
+  max-width: 489px;
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+
+.install__content .vanbansmall2 {
+  color: #fff;
+  margin-top: 18px;
+  max-width: 586px;
+}
+.install__row {
+  margin-top: 38px;
+  display: flex;
+  column-gap: 28px;
+  align-items: center;
+}
+
+/* =================================blog=============================== */
+
+.blog .blog__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.blog__inner .blog__content {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.blog__content .section--heading {
+  color: #10375c;
+
+  font-size: 50px;
+
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: -1px;
+}
+.blog__content .link {
+  color: #10375c;
+  font-family: Inter;
+  font-size: 1.8rem;
+
+  font-weight: 600;
+  line-height: 156%;
+  text-decoration-line: underline;
+}
+
+/* ======button============= */
+.blog .blog__row {
+  display: flex;
+
+  gap: 1.8rem;
+}
+.blog .blog__row .nutbam {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 36px;
+  border: 1px solid #575f66;
+  background-color: #fff;
+  transition: background 0.2s ease;
+}
+.blog .blog__row .container {
+  rotate: 180deg;
+}
+.blog .blog__row .nutbam:hover {
+  background: #2e80ce;
+  border-color: #2e80ce;
+  color: #fff;
+}
+
+/* =========================right====================== */
+.blog .blog__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+.blog .blog__list .blog__list--item {
+  width: 270px;
+}
+.blog__list--item:hover {
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0px 18px 50px 0px rgba(0, 0, 0, 0.05);
+}
+.blog .blog__list .blog__list--imgage {
+  width: 270px;
+  height: 172px;
+  border-radius: 12px 12px 0px 0px;
+
+  object-fit: cover;
+}
+.blog__item--body {
+  padding: 18px 22px 21px;
+}
+.blog__item--body .blog__item--body-noidung {
+  color: #10375c;
+  font-size: 16px;
+  width: 224px;
+  font-weight: 600;
+  line-height: 163%;
+}
+.blog__item--body .blog__item--body-vanban {
+  width: 226px;
+  color: #575f66;
+  padding-top: 10px;
+  font-size: 14px;
+
+  font-weight: 300;
+  line-height: 171%;
+}
+.blog__item--body .blog__item--body-them {
+  display: block;
+  padding-top: 12px;
+  transition: font-size 0.4s ease, color 0.4s ease;
+}
+.blog__item--body .blog__item--body-them:hover {
+  color: #2e80ce;
+  font-size: 18px;
+}
+
+/* ======================================appoiment================================ */
+.appoinment .box1 {
+  background-color: #f6fbff;
+}
+
+.appoinment .appoinment__inner {
+  padding: 100px 178px;
+  text-align: center;
+}
+
+.appoinment__content {
+  max-width: 813px;
+  color: #10375c;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 120%; /* 120% */
+  letter-spacing: -1px;
+}
+.appoinment__write::before {
+  content: "";
+  display: block;
+  background: #2e80ce;
+  width: 136px;
+  height: 2px;
+  margin: 18px auto 0;
+  border-radius: 2px;
+}
+.appoinment__write {
+  max-width: 617px;
+  color: #575f66;
+
+  margin: 18px auto 38px;
+  text-align: center;
+}
+
+.appoinment__button {
+  color: #fff;
+  text-align: center;
+
+  font-weight: 400;
+}
+
+/* ============================footer============================ */
+.footer .bacground {
+  background-color: #10375c;
+}
+.footer__top {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__top .footer__desc {
+  width: 336px;
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin-top: 21px;
+}
+.footer__columns--heading {
+  color: #fff;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 175%;
+  margin-bottom: 20px;
+}
+.footer__block {
+  margin-bottom: 28px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__columns--heading--link {
+  color: #a9b3bb;
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 186%;
+}
+
+.footer__input {
+  display: inline-block;
+  margin-top: 10px;
+}
+.footer__input .footer__input--email {
+  background: transparent;
+
+  width: 212px;
+  height: 46px;
+  border-radius: 4px;
+  border: 1px solid #406181;
+  color: #fff;
+  outline: none;
+}
+.footer__input .footer__button {
+  width: 108px;
+  height: 46px;
+  border-radius: 4px;
+  background: #2e80ce;
+  border: none;
+  color: #fff;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+.footer__input--email::placeholder {
+  font-family: "Open Sans";
+  font-size: 14px;
+
+  font-weight: 600;
+  line-height: 186%;
+}
+.footer__button:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* ===================footer__bottom================ */
+.footer__bottom {
+  border-top: 1px solid #406181;
+}
+.footer__bottom .footer__bosung {
+  padding: 28px 0 42px;
+  color: #aab3ba;
+  text-align: center;
+  font-family: "Open Sans";
+
+  font-weight: 400;
+}
